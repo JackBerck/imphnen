@@ -100,7 +100,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://www.javascript.com"
-                  className="py-1 px-2 bg-yellow-secondary text-yellow-base rounded-md text-sm"
+                  className="py-1 px-2 bg-yellow-tertiary text-yellow-base rounded-md text-sm"
                 >
                   JavaScript
                 </a>
@@ -108,7 +108,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://www.python.org"
-                  className="py-1 px-2 bg-blue-secondary text-blue-base rounded-md text-sm"
+                  className="py-1 px-2 bg-blue-tertiary text-blue-base rounded-md text-sm"
                 >
                   Python
                 </a>
@@ -116,7 +116,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://www.java.com"
-                  className="py-1 px-2 bg-red-secondary text-red-base rounded-md text-sm"
+                  className="py-1 px-2 bg-red-tertiary text-red-base rounded-md text-sm"
                 >
                   Java
                 </a>
@@ -124,7 +124,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://golang.org"
-                  className="py-1 px-2 bg-green-secondary text-green-base rounded-md text-sm"
+                  className="py-1 px-2 bg-green-tertiary text-green-base rounded-md text-sm"
                 >
                   Go
                 </a>
@@ -132,7 +132,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://www.typescriptlang.org"
-                  className="py-1 px-2 bg-cyan-secondary text-cyan-base rounded-md text-sm"
+                  className="py-1 px-2 bg-cyan-tertiary text-cyan-base rounded-md text-sm"
                 >
                   TypeScript
                 </a>
@@ -140,7 +140,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://learn.microsoft.com/en-us/dotnet/csharp/"
-                  className="py-1 px-2 bg-purple-secondary text-purple-base rounded-md text-sm"
+                  className="py-1 px-2 bg-purple-tertiary text-purple-base rounded-md text-sm"
                 >
                   C#
                 </a>
@@ -148,7 +148,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://www.rust-lang.org"
-                  className="py-1 px-2 bg-orange-secondary text-orange-base rounded-md text-sm"
+                  className="py-1 px-2 bg-orange-tertiary text-orange-base rounded-md text-sm"
                 >
                   HTML
                 </a>
@@ -156,7 +156,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://kotlinlang.org"
-                  className="py-1 px-2 bg-pink-secondary text-pink-base rounded-md text-sm"
+                  className="py-1 px-2 bg-pink-tertiary text-pink-base rounded-md text-sm"
                 >
                   CSS
                 </a>
@@ -164,7 +164,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://developer.apple.com/swift/"
-                  className="py-1 px-2 bg-teal-secondary text-teal-base rounded-md text-sm"
+                  className="py-1 px-2 bg-teal-tertiary text-teal-base rounded-md text-sm"
                 >
                   Node.js
                 </a>
@@ -172,7 +172,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://www.php.net"
-                  className="py-1 px-2 bg-violet-secondary text-violet-base rounded-md text-sm"
+                  className="py-1 px-2 bg-violet-tertiary text-violet-base rounded-md text-sm"
                 >
                   PHP
                 </a>
@@ -180,7 +180,10 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <p className="text-xs text-center text-gray-700 dark:text-gray-400">© 2025 IMPHNEN - Ingin Menjadi Programmer Handal, Namun Enggan Ngoding. All rights reserved.</p>
+        <p className="text-xs text-center text-gray-700 dark:text-gray-400">
+          © 2025 IMPHNEN - Ingin Menjadi Programmer Handal, Namun Enggan
+          Ngoding. All rights reserved.
+        </p>
       </div>
     </footer>
   );

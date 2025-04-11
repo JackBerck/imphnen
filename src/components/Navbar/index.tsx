@@ -41,11 +41,11 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className={`section-padding-x fixed top-0 w-full z-[998] bg-light-base text-dark-base normal-font-size transition-all duration-300 ${
+      className={`section-padding-x fixed top-0 w-full z-[998] text-dark-base normal-font-size transition-all duration-300 ${
         isScrolled
           ? "backdrop-blur-md shadow-md"
           : "lg:bg-transparent shadow-none"
-      } py-4 dark:text-light-base dark:bg-dark-base dark:shadow-none dark:backdrop-blur-none`}
+      } py-4 dark:text-light-base`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
         <a href="#">
