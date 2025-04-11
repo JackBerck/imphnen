@@ -5,7 +5,7 @@ export default function Features() {
       className="section-padding-x pt-12 pb-12 text-dark-base dark:text-light-base bg-light-base dark:bg-dark-base"
     >
       <div className="mx-auto max-w-screen-xl">
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 max-w-3xl mx-auto">
           <p className="px-2 py-0.5 rounded-md text-blue-base bg-blue-tertiary font-semibold w-fit mx-auto">
             Fitur Unggulan
           </p>
@@ -17,7 +17,7 @@ export default function Features() {
           </h2>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          <div className="shadow-sm border border-gray-200 dark:border-gray-700 hover:scale-105 transition-all duration-300 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <div className="shadow-sm border border-gray-200 dark:border-gray-700 hover:scale-105 transition-all duration-300 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
             <div className="p-4 rounded-full bg-purple-tertiary text-purple-base w-fit mb-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ export default function Features() {
               harus menulis kode yang rumit.
             </p>
           </div>
-          <div className="shadow-sm border border-gray-200 dark:border-gray-700 hover:scale-105 transition-all duration-300 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <div className="shadow-sm border border-gray-200 dark:border-gray-700 hover:scale-105 transition-all duration-300 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
             <div className="p-4 rounded-full bg-yellow-tertiary text-yellow-base w-fit mb-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ export default function Features() {
               membantu Anda dalam perjalanan belajar Anda.
             </p>
           </div>
-          <div className="shadow-sm border border-gray-200 dark:border-gray-700 hover:scale-105 transition-all duration-300 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <div className="shadow-sm border border-gray-200 dark:border-gray-700 hover:scale-105 transition-all duration-300 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
             <div className="p-4 rounded-full bg-blue-tertiary text-blue-base w-fit mb-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ export default function Features() {
               memahami konsep-konsep programming dengan lebih baik.
             </p>
           </div>
-          <div className="shadow-sm border border-gray-200 dark:border-gray-700 hover:scale-105 transition-all duration-300 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <div className="shadow-sm border border-gray-200 dark:border-gray-700 hover:scale-105 transition-all duration-300 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
             <div className="p-4 rounded-full bg-green-tertiary text-green-base w-fit mb-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
