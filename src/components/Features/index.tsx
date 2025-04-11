@@ -6,7 +6,7 @@ export default function Features() {
     >
       <div className="mx-auto max-w-screen-xl">
         <div className="text-center mb-8 max-w-3xl mx-auto">
-          <p className="px-2 py-0.5 rounded-md text-blue-base bg-blue-tertiary font-semibold w-fit mx-auto">
+          <p className="px-2 py-0.5 mb-2 rounded-md text-blue-base bg-blue-tertiary font-semibold w-fit mx-auto">
             Fitur Unggulan
           </p>
           <h2 className="font-bold mb-2">

@@ -8,11 +8,11 @@ export default function Communities() {
     >
       <div className="mx-auto max-w-screen-xl">
         <div className="text-center mb-8 max-w-3xl mx-auto">
-          <p className="px-2 py-0.5 rounded-md text-blue-base bg-blue-tertiary font-semibold w-fit mx-auto">
+          <p className="px-2 py-0.5 mb-2 rounded-md text-blue-base bg-blue-tertiary font-semibold w-fit mx-auto">
             Komunitas Kami
           </p>
           <h2 className="font-bold mb-2">
-            Bergabunglah dengan Ribuan Programmer Indonesia yang Saling Membantu
+            Bergabunglah dengan Ribuan <span className="bg-blue-imphnen-base text-light-base">Programmer Indonesia</span> yang Saling Membantu
             dan Berbagi Pengetahuan
           </h2>
         </div>
@@ -46,108 +46,3 @@ export default function Communities() {
     </section>
   );
 }
-
-/**
- * <div className="shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden">
-            <div className="relative">
-              <img
-                src="/instagram-imphnen.png"
-                alt="Instagram IMPHNEN"
-                className="w-full h-36 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-50 dark:to-gray-800"></div>
-            </div>
-            <div className="p-4">
-              <h3 className="font-semibold mb-1">Instagram</h3>
-              <p className="text-gray-500">
-                Ikuti kami di Instagram untuk tips programming, quotes
-                inspiratif, dan info event terbaru.
-              </p>
-            </div>
-          </div>
-          <div className="shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden">
-            <div className="relative">
-              <img
-                src="/discord-imphnen.png"
-                alt="Discord IMPHNEN"
-                className="w-full h-36 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-50 dark:to-gray-800"></div>
-            </div>
-            <div className="p-4">
-              <h3 className="font-semibold mb-1">Discord Server</h3>
-              <p className="text-gray-500">
-                Diskusi realtime dengan sesama programmer dan dapatkan bantuan
-                langsung dari para ahli.
-              </p>
-            </div>
-          </div>
-          <div className="shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden">
-            <div className="relative">
-              <img
-                src="/github-imphnen.png"
-                alt="GitHub IMPHNEN"
-                className="w-full h-36 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-50 dark:to-gray-800"></div>
-            </div>
-            <div className="p-4">
-              <h3 className="font-semibold mb-1">Discord Server</h3>
-              <p className="text-gray-500">
-                Diskusi realtime dengan sesama programmer dan dapatkan bantuan
-                langsung dari para ahli.
-              </p>
-            </div>
-          </div>
- * <div className="shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden">
-            <div className="relative">
-              <img
-                src="/instagram-imphnen.png"
-                alt="Instagram IMPHNEN"
-                className="w-full h-36 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-50 dark:to-gray-800"></div>
-            </div>
-            <div className="p-4">
-              <h3 className="font-semibold mb-1">Instagram</h3>
-              <p className="text-gray-500">
-                Ikuti kami di Instagram untuk tips programming, quotes
-                inspiratif, dan info event terbaru.
-              </p>
-            </div>
-          </div>
-          <div className="shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden">
-            <div className="relative">
-              <img
-                src="/discord-imphnen.png"
-                alt="Discord IMPHNEN"
-                className="w-full h-36 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-50 dark:to-gray-800"></div>
-            </div>
-            <div className="p-4">
-              <h3 className="font-semibold mb-1">Discord Server</h3>
-              <p className="text-gray-500">
-                Diskusi realtime dengan sesama programmer dan dapatkan bantuan
-                langsung dari para ahli.
-              </p>
-            </div>
-          </div>
-          <div className="shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden">
-            <div className="relative">
-              <img
-                src="/github-imphnen.png"
-                alt="GitHub IMPHNEN"
-                className="w-full h-36 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-50 dark:to-gray-800"></div>
-            </div>
-            <div className="p-4">
-              <h3 className="font-semibold mb-1">Discord Server</h3>
-              <p className="text-gray-500">
-                Diskusi realtime dengan sesama programmer dan dapatkan bantuan
-                langsung dari para ahli.
-              </p>
-            </div>
-          </div>
- */

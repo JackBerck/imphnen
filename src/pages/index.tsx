@@ -2,6 +2,7 @@ import Layout from "../layouts";
 import Hero from "../components/Hero";
 import Features from "../components/Features";
 import Communities from "../components/Communities";
+import Learn from "../components/Learn";
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <Hero />
       <Features />
       <Communities />
+      <Learn />
     </Layout>
   );
 }
