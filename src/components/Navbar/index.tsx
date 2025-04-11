@@ -45,7 +45,7 @@ export default function Navbar() {
         isScrolled
           ? "backdrop-blur-md shadow-md"
           : "lg:bg-transparent shadow-none"
-      } py-4 dark:text-light-base`}
+      } py-4 bg-transparent backdrop-blur-md shadow-md dark:text-light-base dark:bg-transparent dark:backdrop-blur-md dark:shadow-md`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
         <a href="#">
@@ -70,7 +70,7 @@ export default function Navbar() {
             isMenuOpen ? "block" : "hidden"
           }`}
         >
-          <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-200 rounded-lg lg:flex-row rtl:space-x-reverse lg:mt-0 lg:border-none gap-2 lg:gap-4">
+          <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border dark:border-gray-200 border-gray-400 rounded-lg lg:flex-row rtl:space-x-reverse lg:mt-0 lg:border-none gap-2 lg:gap-4">
             {navigation.map((route, index) => (
               <NavigationLink
                 key={index}
@@ -88,7 +88,7 @@ export default function Navbar() {
               id="theme-toggle"
               type="button"
               onClick={toggleTheme}
-              className="text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg text-sm py-2 px-3 transition-all duration-300 cursor-pointer w-fit"
+              className="text-gray-500 dark:text-gray-400 border dark:border-gray-200 border-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg text-sm py-2 px-3 transition-all duration-300 cursor-pointer w-fit"
             >
               {isDarkMode ? (
                 <svg

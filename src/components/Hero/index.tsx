@@ -28,7 +28,7 @@ export default function Hero() {
               Ingin Menjadi Programmer Handal? Namun Enggan Ngoding?
             </h1>
             <p className="mb-2">
-              Bergabunglah dengan kami di IMPHNEN, tempat belajar pemrograman
+              Bergabunglah dengan kami di <span className="bg-blue-imphnen-base text-light-base">IMPHNEN</span>, tempat belajar pemrograman
               yang menyenangkan dan interaktif. Kami menyediakan berbagai
               tutorial, latihan, dan proyek yang dirancang untuk membantu Anda
               belajar dengan cara yang menyenangkan.
@@ -52,15 +52,15 @@ export default function Hero() {
             <div className="text-dark-base dark:text-light-base flex gap-8 justify-between items-center p-4 rounded-lg text-center">
               <div className="flex flex-col gap-2 border-r-2 border-gray-200 pr-4">
                 <h4 className="font-semibold">20+</h4>
-                <p>Tentor</p>
+                <p className="small-font-size">Tentor</p>
               </div>
               <div className="flex flex-col gap-2 border-r-2 border-gray-200 pr-4">
                 <h4 className="font-semibold">100+</h4>
-                <p>Diskusi Perhari</p>
+                <p className="small-font-size">Diskusi Perhari</p>
               </div>
               <div className="flex flex-col gap-2">
                 <h4 className="font-semibold">108K+</h4>
-                <p>Member</p>
+                <p className="small-font-size">Member</p>
               </div>
             </div>
             <div className="p-4 rounded-lg gradient-to-r from-blue-base to-blue-secondary bg-gradient-to-br text-light-base">
