@@ -28,6 +28,7 @@ export default function Learn() {
   return (
     <section
       id="sumber-belajar"
+      ref={ref}
       className="section-padding-x pt-12 pb-12 text-dark-base dark:text-light-base bg-light-base dark:bg-dark-base scroll-mt-12"
     >
       <div className="mx-auto max-w-screen-xl">
