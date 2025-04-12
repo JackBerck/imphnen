@@ -148,7 +148,7 @@ export default function Testimonial() {
   return (
     <motion.section
       id="testimoni"
-      className="section-padding-x pt-12 pb-12 dark:text-dark-base text-light-base dark:bg-light-base bg-dark-base lg:max-h-[512px] overflow-hidden scroll-mt-12"
+      className="section-padding-x pt-12 pb-12 dark:text-light-base text-light-base bg-dark-base lg:max-h-[512px] overflow-hidden scroll-mt-12 gradient-to-r from-dark-base to-blue-imphnen-secondary/10 dark:from-slate-900 dark:to-blue-imphnen-secondary/20 bg-gradient-to-br"
       ref={sectionRef}
       initial="hidden"
       animate={controls}
@@ -167,7 +167,7 @@ export default function Testimonial() {
           <h2 className="font-bold mb-2">
             Apa Kata Mereka yang Telah Bergabung Dengan Komunitas IMPHNEN?
           </h2>
-          <p className="text-gray-500 mb-4">
+          <p className="text-gray-500 dark:text-gray-300 mb-4">
             IMPHNEN menyediakan tempat yang nyaman untuk belajar dan berbagi
             ilmu programming, entah itu dari pemula hingga mahir.
           </p>

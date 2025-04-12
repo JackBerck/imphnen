@@ -93,7 +93,7 @@ export default function Features() {
     <section
       id="fitur"
       ref={ref}
-      className="section-padding-x pt-12 pb-12 text-dark-base dark:text-light-base bg-light-base dark:bg-dark-base scroll-mt-12"
+      className="section-padding-x pt-12 pb-12 text-dark-base dark:text-light-base bg-light-base dark:bg-dark-base scroll-mt-12 bg-gradient-to-br dark:from-dark-base dark:via-dark-base/80 dark:to-blue-imphnen-secondary/10 from-light-base via-light-base/70 to-blue-imphnen-secondary/10 relative"
     >
       <div className="mx-auto max-w-screen-xl">
         <motion.div

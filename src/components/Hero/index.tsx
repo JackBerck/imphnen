@@ -4,13 +4,18 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="bg-light-base text-dark-base dark:bg-dark-base dark:text-light-base section-padding-x pt-24 lg:pt-32 pb-24 scroll-mt-12"
+      className="bg-light-base text-dark-base dark:bg-slate-950 dark:text-light-base section-padding-x pt-24 lg:pt-32 pb-24 scroll-mt-12 relative"
       style={{
         backgroundImage:
           "url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27%3E%3Cg fill=%27%2399a1af%27 fill-opacity=%270.1%27%3E%3Cpolygon fill-rule=%27evenodd%27 points=%278 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4%27/%3E%3C/g%3E%3C/svg%3E')",
       }}
     >
-      <div className="max-w-screen-xl mx-auto flex gap-4 flex-col xl:flex-row justify-between">
+      <div className="absolute inset-0 bg-light-base dark:bg-dark-base opacity-50">
+        <div
+          className="absolute w-96 h-96 bg-blue-400 rounded-full opacity-30 blur-3xl top-0 left-0 -z-10"
+        ></div>
+      </div>
+      <div className="max-w-screen-xl mx-auto flex gap-4 flex-col xl:flex-row justify-between relative">
         <motion.div
           className="hero-animate-1"
           initial={{ opacity: 0, x: -50 }}

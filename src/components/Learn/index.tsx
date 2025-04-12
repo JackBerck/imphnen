@@ -69,10 +69,10 @@ export default function Learn() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0 * 0.15, ease: "easeOut" }}
             className={
-              "shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group hover:bg-violet-base"
+              "shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group"
             }
           >
-            <div className="absolute h-full w-full bg-violet-base -top-62 left-0 transition-all duration-300 group-hover:top-0 z-1"></div>
+            <div className="absolute h-full w-full text-light-base gradient-to-r from-violet-base to-violet-secondary bg-gradient-to-br -top-62 left-0 transition-all duration-300 group-hover:top-0 z-1"></div>
             <div className="relative z-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -103,10 +103,10 @@ export default function Learn() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 1 * 0.15, ease: "easeOut" }}
             className={
-              "shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group hover:bg-cyan-base"
+              "shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group"
             }
           >
-            <div className="absolute h-full w-full bg-cyan-base -top-62 left-0 transition-all duration-300 group-hover:top-0 z-1"></div>
+            <div className="absolute h-full w-full text-light-base gradient-to-r from-cyan-base to-cyan-secondary bg-gradient-to-br -top-62 left-0 transition-all duration-300 group-hover:top-0 z-1"></div>
             <div className="relative z-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -137,10 +137,10 @@ export default function Learn() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 2 * 0.15, ease: "easeOut" }}
             className={
-              "shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group hover:bg-orange-base"
+              "shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group"
             }
           >
-            <div className="absolute h-full w-full bg-orange-base -top-62 left-0 transition-all duration-300 group-hover:top-0 z-1"></div>
+            <div className="absolute h-full w-full text-light-base gradient-to-r from-orange-base to-orange-secondary bg-gradient-to-br -top-62 left-0 transition-all duration-300 group-hover:top-0 z-1"></div>
             <div className="relative z-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -171,10 +171,10 @@ export default function Learn() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 3 * 0.15, ease: "easeOut" }}
             className={
-              "shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group hover:bg-green-base"
+              "shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group"
             }
           >
-            <div className="absolute h-full w-full bg-green-base -top-62 left-0 transition-all duration-300 group-hover:top-0 z-1"></div>
+            <div className="absolute h-full w-full text-light-base gradient-to-r from-green-base to-green-secondary bg-gradient-to-br -top-62 left-0 transition-all duration-300 group-hover:top-0 z-1"></div>
             <div className="relative z-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

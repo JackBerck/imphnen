@@ -6,24 +6,24 @@ const testimonials1: {
   image: string;
 }[] = [
   {
-    name: "John Doe",
-    title: "Software Engineer",
+    name: "Budi Santoso",
+    title: "Web Developer Pemula",
     company: "Tech Corp",
-    text: "This is the best product I've ever used! It has changed the way I work.",
+    text: "Saya yang tadinya tidak mengerti apa-apa tentang programming, sekarang bisa memahami konsep dasar dengan mudah. Terima kasih IMPHNEN!",
     image: "https://randomuser.me/api/portraits/men/1.jpg",
   },
   {
-    name: "Jane Smith",
-    title: "Product Manager",
+    name: "Anis Rahma",
+    title: "Mahasiswa Informatika",
     company: "Innovate Inc.",
-    text: "A game changer in the industry. Highly recommend to anyone looking to improve their workflow.",
+    text: "Komunitas yang sangat supportif! Setiap pertanyaan selalu dijawab dengan cepat dan jelas. Metode penjelasannya mudah dipahami.",
     image: "https://randomuser.me/api/portraits/women/1.jpg",
   },
   {
-    name: "Alice Johnson",
-    title: "UX Designer",
+    name: "Dodi Permana",
+    title: "Front-end Developer",
     company: "Creative Studio",
-    text: "The user experience is top-notch. I love how intuitive and easy to use it is.",
+    text: "Server Discord IMPHNEN adalah tempat belajar terbaik untuk programmer pemula seperti saya. Materinya lengkap dan komunitas sangat membantu.",
     image: "https://randomuser.me/api/portraits/women/2.jpg",
   },
 ];
@@ -35,28 +35,27 @@ const testimonials2: {
   text: string;
   image: string;
 }[] = [
-  
   {
-    name: "Bob Brown",
-    title: "Data Scientist",
-    company: "Data Insights",
-    text: "The analytics features are incredibly powerful. It has helped us make data-driven decisions.",
-    image: "https://randomuser.me/api/portraits/men/2.jpg",
+    name: "Siti Aminah",
+    title: "UI/UX Designer",
+    company: "Design Studio",
+    text: "Saya sangat terbantu dengan komunitas ini. Banyak ilmu baru yang saya dapatkan, terutama dalam mendesain antarmuka yang user-friendly.",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
-    name: "Emily Davis",
-    title: "Marketing Specialist",
-    company: "Brand Builders",
-    text: "This tool has streamlined our marketing campaigns and boosted our ROI significantly.",
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
+    name: "Rizky Hidayat",
+    title: "Software Engineer",
+    company: "Code Factory",
+    text: "Materi yang disediakan sangat lengkap dan mudah dipahami. Sangat cocok untuk pemula maupun yang sudah berpengalaman.",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
   {
-    name: "Michael Wilson",
-    title: "IT Consultant",
-    company: "Tech Solutions",
-    text: "An essential tool for any professional. The support team is also fantastic!",
-    image: "https://randomuser.me/api/portraits/men/3.jpg",
+    name: "Lina Kusuma",
+    title: "Data Analyst",
+    company: "Insight Analytics",
+    text: "Komunitas ini memberikan banyak wawasan baru tentang analisis data. Sangat membantu dalam pekerjaan saya sehari-hari.",
+    image: "https://randomuser.me/api/portraits/women/5.jpg",
   },
 ];
 
-export  {testimonials1, testimonials2};
+export { testimonials1, testimonials2 };

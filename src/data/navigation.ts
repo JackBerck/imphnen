@@ -20,7 +20,7 @@ const navigation: {
   },
   {
     title: "Gabung Discord",
-    path: "https://discord.gg/",
+    path: "https://discord.gg/W4XyRAmPSD",
   },
 ];
 

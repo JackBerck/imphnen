@@ -30,7 +30,7 @@ export default function Communities() {
     <section
       id="komunitas"
       ref={ref}
-      className="section-padding-x pt-12 pb-12 text-dark-base dark:text-light-base bg-light-base dark:bg-dark-base scroll-mt-12"
+      className="section-padding-x pt-12 pb-12 text-dark-base dark:text-light-base bg-light-base dark:bg-slate-950 scroll-mt-12"
     >
       <div className="mx-auto max-w-screen-xl">
         <motion.div
