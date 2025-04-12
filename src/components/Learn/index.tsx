@@ -1,24 +1,76 @@
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
+
 export default function Learn() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-96px" });
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    }
+  }, [isInView, controls]);
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.2,
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    }),
+  };
+
   return (
     <section
-      id="learn"
-      className="section-padding-x pt-12 pb-12 text-dark-base dark:text-light-base bg-light-base dark:bg-dark-base"
+      id="sumber-belajar"
+      className="section-padding-x pt-12 pb-12 text-dark-base dark:text-light-base bg-light-base dark:bg-dark-base scroll-mt-12"
     >
       <div className="mx-auto max-w-screen-xl">
-        <div className="text-center mb-8 max-w-3xl mx-auto">
-          <p className="px-2 py-0.5 mb-2 rounded-md text-blue-base bg-blue-tertiary font-semibold w-fit mx-auto">
+        <motion.div
+          className="text-center mb-8 max-w-3xl mx-auto"
+          initial="hidden"
+          animate={controls}
+          variants={cardVariants}
+          custom={0}
+        >
+          <motion.p
+            className="px-2 py-0.5 mb-2 rounded-md text-blue-base bg-blue-tertiary font-semibold w-fit mx-auto"
+            initial="hidden"
+            animate={controls}
+            variants={cardVariants}
+            custom={1}
+          >
             Sumber Belajar
-          </p>
-          <h2 className="font-bold mb-2">
+          </motion.p>
+          <motion.h2
+            className="font-bold mb-2"
+            initial="hidden"
+            animate={controls}
+            variants={cardVariants}
+            custom={2}
+          >
             Akses Berbagai Materi Belajar yang Akan Membantu Kamu Menguasai
             Konsep{" "}
             <span className="bg-blue-imphnen-base text-light-base">
               Programming
             </span>
-          </h2>
-        </div>
+          </motion.h2>
+        </motion.div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          <div className="shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group hover:bg-violet-base">
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0 * 0.15, ease: "easeOut" }}
+            className={
+              "shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group hover:bg-violet-base"
+            }
+          >
             <div className="absolute h-full w-full bg-violet-base -top-62 left-0 transition-all duration-300 group-hover:top-0 z-1"></div>
             <div className="relative z-2">
               <svg
@@ -43,8 +95,16 @@ export default function Learn() {
                 Lihat semua video
               </a>
             </div>
-          </div>
-          <div className="shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group hover:bg-cyan-base">
+          </motion.div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 1 * 0.15, ease: "easeOut" }}
+            className={
+              "shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group hover:bg-cyan-base"
+            }
+          >
             <div className="absolute h-full w-full bg-cyan-base -top-62 left-0 transition-all duration-300 group-hover:top-0 z-1"></div>
             <div className="relative z-2">
               <svg
@@ -69,8 +129,16 @@ export default function Learn() {
                 Baca artikel terbaru
               </a>
             </div>
-          </div>
-          <div className="shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group hover:bg-orange-base">
+          </motion.div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 2 * 0.15, ease: "easeOut" }}
+            className={
+              "shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group hover:bg-orange-base"
+            }
+          >
             <div className="absolute h-full w-full bg-orange-base -top-62 left-0 transition-all duration-300 group-hover:top-0 z-1"></div>
             <div className="relative z-2">
               <svg
@@ -95,8 +163,16 @@ export default function Learn() {
                 Mulai tantangan
               </a>
             </div>
-          </div>
-          <div className="shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group hover:bg-green-base">
+          </motion.div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 3 * 0.15, ease: "easeOut" }}
+            className={
+              "shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 p-4 pt-8 bg-gray-50 dark:bg-gray-900 rounded-lg relative overflow-hidden group hover:bg-green-base"
+            }
+          >
             <div className="absolute h-full w-full bg-green-base -top-62 left-0 transition-all duration-300 group-hover:top-0 z-1"></div>
             <div className="relative z-2">
               <svg
@@ -121,7 +197,7 @@ export default function Learn() {
                 Mulai tantangan
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

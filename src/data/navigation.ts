@@ -4,19 +4,19 @@ const navigation: {
 }[] = [
   {
     title: "Fitur",
-    path: "fitur",
+    path: "#fitur",
   },
   {
     title: "Komunitas",
-    path: "komunitas",
+    path: "#komunitas",
   },
   {
     title: "Sumber Belajar",
-    path: "sumber-belajar",
+    path: "#sumber-belajar",
   },
   {
     title: "Testimoni",
-    path: "testimoni",
+    path: "#testimoni",
   },
   {
     title: "Gabung Discord",

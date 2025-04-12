@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { testimonials1, testimonials2 } from "../../data/testimonial";
 import { useMediaQuery } from "react-responsive";
+import { useInView, useAnimation, motion } from "framer-motion";
 
 type TestimonialProps = {
   name: string;
@@ -17,8 +18,8 @@ export default function Testimonial() {
   const animationRef2 = useRef<number | undefined>(undefined);
   const currentOffset1 = useRef<number>(0);
   const currentOffset2 = useRef<number>(0);
-  const animationDuration = 5; // dalam detik
-  const scrollSpeed = 0.3;
+  let scrollSpeed = 0.3;
+  let animationDuration = 5; // default duration for large screens
 
   const [direction1, setDirection1] = useState<
     "up" | "down" | "left" | "right"
@@ -26,9 +27,23 @@ export default function Testimonial() {
   const [direction2, setDirection2] = useState<
     "up" | "down" | "left" | "right"
   >("down");
-
-  // Gunakan useMediaQuery untuk mendeteksi ukuran layar
   const isLargeScreen = useMediaQuery({ minWidth: 1024 });
+
+  // Animasi saat masuk viewport
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, margin: "-96px" });
+  const controls = useAnimation();
+
+  if (!isLargeScreen) {
+    animationDuration = 10;
+    scrollSpeed = 0.5; // slower speed for smaller screens
+  }
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    }
+  }, [isInView, controls]);
 
   const startLoopScroll = (
     container: HTMLDivElement | null,
@@ -38,11 +53,7 @@ export default function Testimonial() {
     isVertical: boolean
   ) => {
     if (!container) return;
-
-    // Hentikan animasi sebelumnya jika ada
-    if (animationRef.current) {
-      cancelAnimationFrame(animationRef.current);
-    }
+    if (animationRef.current) cancelAnimationFrame(animationRef.current);
 
     const contentSize = isVertical
       ? container.scrollHeight
@@ -52,38 +63,21 @@ export default function Testimonial() {
       : container.clientWidth;
 
     const animate = () => {
-      // Update offset berdasarkan arah dan orientasi
       if (isVertical) {
-        if (direction === "up") currentOffset.current += scrollSpeed;
-        if (direction === "down") currentOffset.current -= scrollSpeed;
-      } else {
-        if (direction === "left") currentOffset.current += scrollSpeed;
-        if (direction === "right") currentOffset.current -= scrollSpeed;
-      }
-
-      // Logika reset untuk vertikal
-      if (isVertical) {
-        if (direction === "up" && currentOffset.current >= containerSize) {
+        currentOffset.current +=
+          direction === "up" ? scrollSpeed : -scrollSpeed;
+        if (direction === "up" && currentOffset.current >= containerSize)
           currentOffset.current = -contentSize;
-        }
-        if (direction === "down" && currentOffset.current <= -contentSize) {
+        if (direction === "down" && currentOffset.current <= -contentSize)
           currentOffset.current = containerSize;
-        }
-      }
-      // Logika reset untuk horizontal
-      else {
-        if (direction === "left" && currentOffset.current >= containerSize) {
-          currentOffset.current = -contentSize;
-        }
-        if (direction === "right" && currentOffset.current <= -contentSize) {
-          currentOffset.current = containerSize;
-        }
-      }
-
-      // Apply transform berdasarkan orientasi
-      if (isVertical) {
         container.style.transform = `translateY(${currentOffset.current}px)`;
       } else {
+        currentOffset.current +=
+          direction === "left" ? scrollSpeed : -scrollSpeed;
+        if (direction === "left" && currentOffset.current >= containerSize)
+          currentOffset.current = -contentSize;
+        if (direction === "right" && currentOffset.current <= -contentSize)
+          currentOffset.current = containerSize;
         container.style.transform = `translateX(${currentOffset.current}px)`;
       }
 
@@ -94,7 +88,6 @@ export default function Testimonial() {
   };
 
   useEffect(() => {
-    // Tentukan arah berdasarkan ukuran layar
     const verticalDirection1 =
       direction1 === "left"
         ? "up"
@@ -153,9 +146,20 @@ export default function Testimonial() {
   }, [direction1, direction2, isLargeScreen]);
 
   return (
-    <section
-      id="testimonial"
-      className="section-padding-x pt-12 pb-12 dark:text-dark-base text-light-base dark:bg-light-base bg-dark-base lg:max-h-[512px] overflow-hidden"
+    <motion.section
+      id="testimoni"
+      className="section-padding-x pt-12 pb-12 dark:text-dark-base text-light-base dark:bg-light-base bg-dark-base lg:max-h-[512px] overflow-hidden scroll-mt-12"
+      ref={sectionRef}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0, y: 50 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.8, ease: "easeOut" },
+        },
+      }}
     >
       <div className="mx-auto max-w-screen-xl flex flex-col lg:flex-row justify-between gap-8">
         <div className="max-w-xl">
@@ -176,7 +180,7 @@ export default function Testimonial() {
         </div>
         <div className="flex flex-col lg:flex-row gap-4">
           <div
-            className="flex flex-row lg:flex-col gap-4 w-full lg:w-auto"
+            className="flex flex-row-reverse lg:flex-col gap-4 w-full lg:w-auto"
             ref={container1Ref}
             style={{ whiteSpace: isLargeScreen ? "normal" : "nowrap" }}
           >
@@ -203,7 +207,7 @@ export default function Testimonial() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

@@ -1,15 +1,22 @@
+import { motion } from "framer-motion";
+
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="bg-light-base text-dark-base dark:bg-dark-base dark:text-light-base section-padding-x pt-24 pb-24"
+      className="bg-light-base text-dark-base dark:bg-dark-base dark:text-light-base section-padding-x pt-24 lg:pt-32 pb-24 scroll-mt-12"
       style={{
         backgroundImage:
           "url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27%3E%3Cg fill=%27%2399a1af%27 fill-opacity=%270.1%27%3E%3Cpolygon fill-rule=%27evenodd%27 points=%278 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4%27/%3E%3C/g%3E%3C/svg%3E')",
       }}
     >
       <div className="max-w-screen-xl mx-auto flex gap-4 flex-col xl:flex-row justify-between">
-        <div className="">
+        <motion.div
+          className="hero-animate-1"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <div className="text-dark-base dark:text-light-base rounded-lg mb-4">
             <span className="gradient-to-r text-light-base from-blue-imphnen-base to-blue-imphnen-secondary bg-gradient-to-br flex items-center gap-2 mb-2 w-fit py-1 px-3 rounded-md">
               <svg
@@ -24,16 +31,35 @@ export default function Hero() {
                 Tempat Kumpulnya Para Programmer Indonesia
               </p>
             </span>
-            <h1 className="font-bold mb-2 md:text-left">
+            <motion.h1
+              className="font-bold mb-2 md:text-left"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.7 }}
+            >
               Ingin Menjadi Programmer Handal? Namun Enggan Ngoding?
-            </h1>
-            <p className="mb-2">
-              Bergabunglah dengan kami di <span className="bg-blue-imphnen-base text-light-base">IMPHNEN</span>, tempat belajar pemrograman
-              yang menyenangkan dan interaktif. Kami menyediakan berbagai
-              tutorial, latihan, dan proyek yang dirancang untuk membantu Anda
-              belajar dengan cara yang menyenangkan.
-            </p>
-            <div className="flex gap-2">
+            </motion.h1>
+            <motion.p
+              className="mb-2"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.7 }}
+            >
+              Bergabunglah dengan kami di{" "}
+              <span className="bg-blue-imphnen-base text-light-base">
+                IMPHNEN
+              </span>
+              , tempat belajar pemrograman yang menyenangkan dan interaktif.
+              Kami menyediakan berbagai tutorial, latihan, dan proyek yang
+              dirancang untuk membantu Anda belajar dengan cara yang
+              menyenangkan.
+            </motion.p>
+            <motion.div
+              className="flex gap-2"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.7, duration: 0.5 }}
+            >
               <a
                 href="https://facebook.com"
                 className="rounded-md bg-blue-base text-light-base py-2 px-4 font-semibold hover:bg-blue-quaternary hover:text-blue-base transition duration-300 small-font-size"
@@ -46,9 +72,14 @@ export default function Hero() {
               >
                 Gabung Discord
               </a>
-            </div>
+            </motion.div>
           </div>
-          <div className="flex flex-col md:flex-row xl:justify-between gap-4">
+          <motion.div
+            className="flex flex-col md:flex-row xl:justify-between gap-4"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.9, duration: 0.6 }}
+          >
             <div className="text-dark-base dark:text-light-base flex gap-8 justify-between items-center p-4 rounded-lg text-center">
               <div className="flex flex-col gap-2 border-r-2 border-gray-200 pr-4">
                 <h4 className="font-semibold">20+</h4>
@@ -128,15 +159,20 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="">
+          </motion.div>
+        </motion.div>
+        <motion.div
+          className="hero-animate-2"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
           <img
             src="/image.png"
             alt="IMPHNEN Banner"
             className="xl:max-w-xl rounded-lg"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
