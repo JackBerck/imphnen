@@ -4,6 +4,7 @@ import Features from "../components/Features";
 import Communities from "../components/Communities";
 import Learn from "../components/Learn";
 import CTA from "../components/CTA";
+import Testimonial from "../components/Testimonial";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Features />
       <Communities />
       <Learn />
+      <Testimonial />
       <CTA />
     </Layout>
   );
